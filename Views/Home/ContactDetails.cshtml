@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "ContactDetails";
+}
+
+<div class="container">
+    <h2>ContactDetails</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>John Doe</td>
+        </tr>
+        <tr>
+            <th>Category: </th>
+            <td>Add category here</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td>(123) 456-7890</td>
+        </tr>
+        <tr>
+            <th>Date Added: </th>
+            <td>Add date here</td>
+        </tr>
+     </table>
+</div>
+<div class="container">
+    <a asp-action="Edit" asp-controller="Home" type="button" class="btn btn-dark">Edit</a>
+    <a  asp-action="DeletePage" asp-controller="Home" type="button" class="btn btn-dark">Delete</a>
+    <a asp-action="Index" asp-controller="Home" type="button" class="btn btn-dark">Home</a>
+
+</div>
+
