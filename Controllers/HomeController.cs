@@ -1,38 +1,23 @@
 using ContactManager.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace ContactManager.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private UserContext context { get; set; }
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, UserContext ctx)
         {
+            context = ctx;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult AddContact()
-        {
-            return View();
-        }
-
-        public IActionResult ContactDetails()
-        {
-            return View();
-        }
-        public IActionResult Edit()
-        {
-            return View();
-        }
-
-        public IActionResult DeletePage() {
             return View();
         }
 
