@@ -471,3 +471,7 @@ D:/COLLEGE/sem 3/.NET/Assignments/ContactManager/obj/Debug/net8.0/ContactManager
 /Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/obj/Debug/net8.0/ContactManager.pdb
 /Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/obj/Debug/net8.0/ContactManager.genruntimeconfig.cache
 /Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/obj/Debug/net8.0/ref/ContactManager.dll
+/Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/obj/Debug/net8.0/ContactManager.sourcelink.json
+/Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/bin/Debug/net8.0/MySqlConnector.dll
+/Users/atropos/Documents/School/Georgian/2024 Winter/COMP2084/ContactManager/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
