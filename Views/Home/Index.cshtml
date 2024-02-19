@@ -12,32 +12,44 @@
                 <th scope="col">Phone Number</th>
                 <th scope="col">Email</th>
                 <th scope="col">Category</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>s</td>
-                <td>s</td>
-                <td>s</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>in</td>
-                <td>s</td>
-                <td>s</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>s</td>
-                <td>s</td>
-                <td>s</td>
-            </tr>
+            @* <tr> *@
+            @*     <th scope="row">1</th> *@
+            @*     <td>Mark</td> *@
+            @*     <td>Otto</td> *@
+            @*     <td>s</td> *@
+            @*     <td>s</td> *@
+            @*     <td>s</td> *@
+            @* </tr> *@
+            @* <tr> *@
+            @*     <th scope="row">2</th> *@
+            @*     <td>Jacob</td> *@
+            @*     <td>Thornton</td> *@
+            @*     <td>in</td> *@
+            @*     <td>s</td> *@
+            @*     <td>s</td> *@
+            @* </tr> *@
+            @* <tr> *@
+            @*     <th scope="row">3</th> *@
+            @*     <td colspan="2">Larry the Bird</td> *@
+            @*     <td>s</td> *@
+            @*     <td>s</td> *@
+            @*     <td>s</td> *@
+            @* </tr> *@
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.tel</td>
+                    <td>@user.email</td>
+                    <td>@user.cat_type</td>
+                    <td><a asp-action="Edit" asp-controller="User" class="btn btn-light">Edit</a></td>
+                </tr>
+            }
         </tbody>
     </table>
     <a asp-action="AddContact" asp-controller="User" class="btn btn-info">Add Contact</a>
