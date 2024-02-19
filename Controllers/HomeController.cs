@@ -9,7 +9,7 @@ namespace ContactManager.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private UserContext context { get; set; }
-
+        
         public HomeController(ILogger<HomeController> logger, UserContext ctx)
         {
             context = ctx;
@@ -18,7 +18,9 @@ namespace ContactManager.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var user = context.Users.Include(user1 => user1.UserId)
+                .OrderBy(user1 => user1.UserId).ToList();
+            return View(user);
         }
 
         public IActionResult Privacy()
